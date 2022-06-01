@@ -1,4 +1,37 @@
-.logo {
-    max-width: 20px;
-    max-height: 6px;
+@font-face {
+    font-family: "Krungthep";
+    src: url("../fonts/Krungthep.ttf") fromat("truetype"); 
+}
+
+.logo img {
+    max-width: 200px;
+}
+
+body {
+    font-family: "Eurostile", sans-serif;
+    color: #000;
+}
+
+h1,
+h2 {
+    font-family: "Krungthep";
+    color: #000;
+}
+
+nav li {
+    display: inline-block;
+}
+
+nav ul {
+    padding: 0px;
+}
+
+nav a {
+    color: #000;
+    text-decoration: none;
+    padding: 10px;
+}
+
+nav a:hover {
+    text-decoration: underline;
 }
