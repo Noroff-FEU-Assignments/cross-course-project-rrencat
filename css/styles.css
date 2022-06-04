@@ -7,9 +7,10 @@
 
 header {
     background-color: #352253DB;
-    opacity: 0.2;
     width: 1920px;
     height: 161px;
+    display: flex;
+    align-items: center;
 }
 
 .logo img {
@@ -20,7 +21,7 @@ header {
 
 /* General */
 
-body, 
+body,
 header,
 footer {
     font-family: "Eurostile", sans-serif;
@@ -44,7 +45,7 @@ nav ul {
 }
 
 nav a {
-    color: #000;
+    color: #FFF;
     text-decoration: none;
     padding: 10px;
 }
@@ -65,5 +66,8 @@ footer .logo img {
 }
 
 footer {
+    color: #FFF;
     background-color: #000000;
+    display: flex;
+    align-items: center;
 }
