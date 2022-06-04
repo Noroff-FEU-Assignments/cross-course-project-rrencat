@@ -3,15 +3,26 @@
     src: url("../fonts/Krungthep.ttf") fromat("truetype"); 
 }
 
+/* Header */
+
+header {
+    background-color: #352253DB;
+    opacity: 0.2;
+    width: 1920px;
+    height: 161px;
+}
+
 .logo img {
     max-width: 200px;
 }
 
-footer .logo img {
-    max-width: 150px;
-}
 
-body {
+
+/* General */
+
+body, 
+header,
+footer {
     font-family: "Eurostile", sans-serif;
     color: #000;
 }
@@ -21,6 +32,8 @@ h2 {
     font-family: "Krungthep";
     color: #000;
 }
+
+/* Navigation */
 
 nav li {
     display: inline-block;
@@ -38,4 +51,19 @@ nav a {
 
 nav a:hover {
     text-decoration: underline;
+}
+
+.active {
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+/* Footer */
+
+footer .logo img {
+    max-width: 150px;
+}
+
+footer {
+    background-color: #000000;
 }
