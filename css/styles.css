@@ -3,17 +3,6 @@
     src: url("../fonts/Krungthep.ttf") fromat("truetype"); 
 }
 
-/* Header */
-/*
-header {
-    background-color: #352253DB;
-    width: 1920px;
-    height: 161px;
-    display: flex;
-    align-items: center;
-}
-*/ 
-
 /* General */
 
 body,
@@ -26,7 +15,11 @@ footer {
 h1,
 h2 {
     font-family: "Krungthep";
-    color: #000;
+    color: #FFF;
+}
+
+h1 {
+    font-size: 46px;
 }
 
 html {
@@ -36,42 +29,34 @@ html {
     -o-background-size: cover;
     background-size: cover;
 }
-
-.welcome {
-    margin: 90px;
-    
+.navbar {
+    display: flex;
 }
 
-.navigation {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+.cta {
+    background-image: linear-gradient(#231E47, #3F2252, #812046);
+    color: #FFF;
+    font-family: "Krungthep";
+    text-decoration: none;
+    padding: 10px 20px;
+    border: 2px solid #F469F4;
+    border-radius: 46px;
 }
 
 /* Navigation */
 
 header {
-    position: relative;
-    background: #352253DB;
-    font-size: 1.5rem;
-}
-
-nav,
-#menu-checkbox {
-    display: none;
-    color: #FFF;
-}
-
-#menu-checkbox:checked ~ nav {
-    display: block;
+    top: 0px;
+    left: 0px;
+    width: 1920px;
+    height: 161px;
+    background-color: #352253DB 0% 0% 0.2 no-repeat padding-box;
 }
 
 nav {
     position: absolute;
     background: #352253DB;
     color: #FFF;
-    top: 5px;
-    left: 0px;
 }
 
 nav li {
@@ -86,7 +71,7 @@ nav ul {
 nav a {
     color: #FFF;
     text-decoration: none;
-    padding: 10px 20px;
+    align-items: right;
     font-size: 1rem;
 }
 
@@ -98,6 +83,7 @@ nav a:hover {
     font-weight: bold;
     text-decoration: underline;
 }
+
 
 @media (min-width: 600px) {
     nav {
@@ -115,23 +101,89 @@ nav a:hover {
     }
 
     .logo img {
-        max-width: 200px;
+        max-width: 190px;
     }
 
-    
+    nav,
+    #menu-checkbox {
+    display: none;
+    color: #FFF;
+    }
 }
 
+/* Mobile */
+
+@media (max-width: 599px) {
+    .logo img {
+        display: none;
+    }
+
+    nav {
+        top: 33px;
+        left: 0px;
+    }
+
+    nav,
+    #menu-checkbox {
+        display: none;
+        color: #FFF;
+    } 
+
+    #menu-checkbox:checked ~ nav {
+    display: block;
+    }
+
+    nav a {
+        font-size: 1rem;
+    }
+}
 
 /* Footer */
 
-footer .logo img {
-    max-width: 150px;
-}
-
 footer {
     position: relative;
-    color: #FFF;
-    background-color: #000000;
-    display: flex;
-    align-items: center;
+    top: 190px;
+    padding: 2px;
+    background-color: #000;
+    text-align: center;
+}
+
+/* Home Page */
+
+.first {
+    text-align: center;
+}
+
+img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+}
+
+.first_content {
+    height: 300px;
+    width: 300x;
+}
+
+.welcome {
+    background-image: url("../images/img_galaxy_background.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position-x: right;
+    background-position-y: bottom;
+    min-height: 70vh;
+    position: relative;
+    top: 240px;
+}
+
+.welcome_content {
+    position: relative;
+    top: 150px;
+    text-align: center;
+    margin: 50px;
+}
+
+.welcome_content .cta {
+    position: relative;
+    top: 50px;
 }
