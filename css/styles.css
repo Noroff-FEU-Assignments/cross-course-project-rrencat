@@ -46,10 +46,7 @@ html {
 /* Navigation */
 
 header {
-    top: 0px;
-    left: 0px;
-    width: 1920px;
-    height: 161px;
+    display: flex;
     background-color: #352253DB 0% 0% 0.2 no-repeat padding-box;
 }
 
@@ -71,7 +68,7 @@ nav ul {
 nav a {
     color: #FFF;
     text-decoration: none;
-    align-items: right;
+    align-items: stretch;
     font-size: 1rem;
 }
 
@@ -124,6 +121,7 @@ nav a:hover {
     }
 
     nav,
+    .navbar,
     #menu-checkbox {
         display: none;
         color: #FFF;
