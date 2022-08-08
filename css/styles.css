@@ -30,9 +30,12 @@ html {
     background-size: cover;
 }
 
-.about.html,
-html {
-    background-image: url(../images/img_galaxy_background.jpg) no-repeat center center fixed;
+.galaxy {
+    background: url(../images/img_galaxy_background.jpg) no-repeat center center fixed;    
+    -webkit-background-size: cover; 
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
 }
 
 .navbar {
@@ -174,9 +177,9 @@ img {
     background-repeat: no-repeat;
     background-position-x: right;
     background-position-y: bottom;
-    min-height: 70vh;
+    min-height: 100vh;
     position: relative;
-    top: 240px;
+    top: 100px;
 }
 
 .welcome_content {
