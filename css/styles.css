@@ -29,6 +29,12 @@ html {
     -o-background-size: cover;
     background-size: cover;
 }
+
+.about.html,
+html {
+    background-image: url(../images/img_galaxy_background.jpg) no-repeat center center fixed;
+}
+
 .navbar {
     display: flex;
 }
@@ -175,7 +181,7 @@ img {
 
 .welcome_content {
     position: relative;
-    top: 150px;
+    top: 200px;
     text-align: center;
     margin: 50px;
 }
@@ -184,3 +190,4 @@ img {
     position: relative;
     top: 50px;
 }
+
