@@ -3,6 +3,11 @@
     src: url("../fonts/Krungthep.ttf") fromat("truetype"); 
 }
 
+@font-face {
+    font-family: "Monsterrat";
+    src: url("../fonts/Montserrat-Light.ttf") format("truetype");
+}
+
 /* General */
 
 body,
@@ -59,10 +64,33 @@ html {
     border-radius: 46px;
 }
 
+.about-info h2 {
+    font-family: "Eurostile" bold;
+    font-size: 40px;
+}
+
+.about-info h3 {
+    font-family: "Krungthep";
+    font-size: 45px;
+    -webkit-text-stroke: 1.5px black;
+}
+
+.about-info p {
+    font-family: "Eurostile" bold;
+    font-size: 30px;
+}
+
+.about-info {
+    max-width: 600px;
+    margin: 50px auto;
+    padding: 5px;
+}
+
 /* Navigation */
 
 header {
     display: flex;
+    flex-direction: row;
     background-color: #352253DB 0% 0% 0.2 no-repeat padding-box;
 }
 
@@ -70,6 +98,7 @@ nav {
     position: absolute;
     background: #352253DB;
     color: #FFF;
+    font-size: 1.3rem;
 }
 
 nav li {
@@ -85,7 +114,6 @@ nav a {
     color: #FFF;
     text-decoration: none;
     align-items: stretch;
-    font-size: 1rem;
 }
 
 nav a:hover {
