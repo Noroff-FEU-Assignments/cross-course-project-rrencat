@@ -95,13 +95,15 @@ header {
 }
 
 nav {
-    position: absolute;
+    position: relative;
     background: #352253DB;
     color: #FFF;
     font-size: 1.3rem;
 }
 
 nav li {
+    position: relative;
+    top: 15px;
     display: block;
     padding: 10px;
 }
@@ -125,6 +127,87 @@ nav a:hover {
     text-decoration: underline;
 }
 
+
+/* Footer */
+
+footer {
+    position: relative;
+    top: 190px;
+    padding: 2px;
+    background-color: #000;
+    text-align: center;
+}
+
+/* Home Page */
+
+.first {
+    text-align: center;
+    position: relative;
+    margin: 0px;
+}
+
+img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+}
+
+.first_content {
+    margin-top: 0%;
+    height: 300px;
+    width: 300x;
+}
+
+.welcome {
+    background-image: url("../images/img_galaxy_background.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position-x: right;
+    background-position-y: bottom;
+    min-height: 100vh;
+    position: relative;
+    top: 100px;
+}
+
+.welcome_content {
+    position: relative;
+    top: 200px;
+    text-align: center;
+    margin: 50px;
+}
+
+.welcome_content .cta {
+    position: relative;
+    top: 50px;
+    -webkit-text-stroke: 1px black;
+}
+
+/* Games */
+
+.games {
+    max-width: 1000px;
+    margin: 50px auto;
+}
+
+.featured_products {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    grid-gap: 25px;
+}
+
+.products img {
+    width: 100%;
+}
+
+.products h1 {
+    font-size: 3rem;
+}
+
+.products h2 {
+    font-size: 2rem;
+}
+
+/* Desktop */
 
 @media (min-width: 600px) {
     nav {
@@ -190,59 +273,5 @@ nav a:hover {
     h2 {
         font-size: 30px;
     }
-}
-
-/* Footer */
-
-footer {
-    position: relative;
-    top: 190px;
-    padding: 2px;
-    background-color: #000;
-    text-align: center;
-}
-
-/* Home Page */
-
-.first {
-    text-align: center;
-    position: relative;
-    margin: 0px;
-}
-
-img {
-    max-width: 100%;
-    max-height: 100%;
-    object-fit: contain;
-}
-
-.first_content {
-    margin-top: 0%;
-    height: 300px;
-    width: 300x;
-}
-
-.welcome {
-    background-image: url("../images/img_galaxy_background.jpg");
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position-x: right;
-    background-position-y: bottom;
-    min-height: 100vh;
-    position: relative;
-    top: 100px;
-}
-
-.welcome_content {
-    position: relative;
-    top: 200px;
-    text-align: center;
-    margin: 50px;
-}
-
-.welcome_content .cta {
-    position: relative;
-    top: 50px;
-    -webkit-text-stroke: 1px black;
 }
 
