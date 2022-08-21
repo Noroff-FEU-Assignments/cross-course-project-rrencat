@@ -13,11 +13,10 @@
     <header>
       <label for="menu-checkbox" class="hamburger_icon"><i class="fas fa-bars"></i></label>
       <input type="checkbox" id="menu-checkbox">
-      <nav class="navbar">
+      <nav>
         <div class="logo">
           <a href="index.html" class="logo"> <img src="images/img_logo.png" alt="GameHub logo"> </a>
         </div>
-      <nav>
         <ul>
           <li> <a href="games.html">Games</a></li>
           <li> <a href="about.html">About Us</a></li>
@@ -26,19 +25,35 @@
         </ul>
       </nav>
     </header>
-    <main>
-      
+    <main class="thecheckout">
+      <section class="checkout_">
+        <h1>Your order</h1>
+        <img src="images/games/img_game_cyberpunk.jpg" alt="Cyberpunk">
+        <h2>Cyberpunk</h2>
+        <h3>$14,99</h3>
+        <i class="fa-solid fa-circle-plus"></i>
+        <p>1</p>
+        <i class="fa-solid fa-circle-minus"></i>
+        <h4>Total</h4>
+        <h5>$14,99</h5>
+      </section>
+        <form>
+        <div class="form-wrapper-checkout">
+          <section>
+            <label for="name">Name</label>
+            <input type="text" id="name" name="Name">
+            <label for="cardnumber">Card number</label>
+            <input type="text" id="cardnumber" name="Card Number">
+            <label for="date">Expiration date</label>
+            <input type="text" id="date" name="Expiration date">
+            <label for="code">Security code</label>
+            <input type="text" id="code" name="Security code">
+          </section>
+        </div>
+        <a href="checkout_success.html" class="checkout-cta">Place Payment</a>
+        </form>
     </main>
     <footer>
-      <nav>
-        <ul>
-          <li> <a href="index.html" class="logo"> <img src="images/img_logo.png" alt="GameHub logo"> </a></li>
-          <li> <a href="games.html">Games</a></li>
-          <li> <a href="about.html">About Us</a></li>
-          <li> <a href="contact.html">Contact</a></li>
-          <li> <a href="checkout.html" class="active">Checkout</a></li>
-        </ul>
-      </nav>
       <p>Copyright &copy; Renate Rasmussen</p>
     </footer>
   </body>

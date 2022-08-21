@@ -10,6 +10,13 @@
 
 /* General */
 
+body {
+    min-height: 100vh;
+    margin: 0px;
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+}
+
 body,
 header,
 footer {
@@ -19,7 +26,9 @@ footer {
 
 h1,
 h2,
-h3 {
+h3,
+h4,
+h5 {
     font-family: "Krungthep";
     color: #FFF;
 }
@@ -50,12 +59,9 @@ html {
     background-size: cover;
 }
 
-.navbar {
-    display: flex;
-}
-
 .cta,
-.cta2 {
+.cta2,
+.checkout-cta {
     background-image: linear-gradient(#231E47, #3F2252, #812046);
     color: #FFF;
     font-family: "Krungthep";
@@ -72,7 +78,6 @@ html {
 header {
     display: flex;
     flex-direction: row;
-    background-color: #352253DB 0% 0% 0.2 no-repeat padding-box;
 }
 
 nav {
@@ -217,14 +222,43 @@ img {
 
 .product_info {
     background-color: #352253;
-    display: flex;
     max-width: 600px;
-    margin: 0 auto;
-    padding: 5px;
+    margin: 50px auto;
+    padding: 50px;
+    display: flex;
+    gap: 50px;
 }
 
-.product_info img {
+.info {
+    flex: 50%;
+}
+
+.info img {
     width: 100%;
+    position: relative;
+    top: 55px;
+}
+
+.info h1 {
+    font-size: 65px;
+    position: relative;
+    margin: 0;
+    padding: 0;
+}
+
+.info h2 {
+    font-size: 40px;
+    margin: 0 0 0 240px;
+}
+
+.info p {
+    margin: 5px 0 10px 0;
+}
+
+.info .cta {
+    position: relative;
+    margin: 0 0 20px 80px;
+    top: 20px;
 }
 
 
@@ -255,6 +289,7 @@ img {
 .about-info p {
     font-family: "Eurostile";
     font-size: 30px;
+    -webkit-text-stroke: 1.5px black;
 }
 
 .about-info {
@@ -267,8 +302,8 @@ img {
 
 .about-info .contact {
     position: relative;
-    top: 50px;
-    left: 500px;
+    top: -11px;
+    left: 420px;
 }
 
 .about-info .contact p {
@@ -279,6 +314,7 @@ img {
 
 .about-info .cta {
     position: relative;
+    bottom: -2px;
 }
 
 
@@ -304,10 +340,6 @@ img {
 }
 
 form {
-    background-color: #352253 0% 0% no-repeat padding-box;
-    opacity: 1;
-    backdrop-filter: blur(5%);
-    -webkit-backdrop-filter: blur(5%);
     position: relative;
     left: 400px;
 }
@@ -348,13 +380,128 @@ textarea {
     left: 200px;
 }
 
+/* Checkout */
+
+.thecheckout {
+    display: flex;
+}
+
+.checkout_ {
+    max-width: 600px;
+    background: #3F2252;
+    margin: 10px 10px 58px 60px;
+    padding: 22px 5px 32px 18px;
+    position: relative;
+}
+
+.checkout_ {
+    flex: 1;
+}
+
+.checkout_ h1 {
+    position: relative;
+    margin: 5px;
+    top: -8px;
+    left: 97px;
+}
+
+.checkout_ img {
+    max-width: 200px;
+    margin: 10px;
+    padding: 10px;
+}
+
+.checkout_ h2 {
+    position: relative;
+    font-size: 30px;
+    top: -187px;
+    left: 235px;
+}
+
+.checkout_ h3 {
+    font-size: 20px;
+    position: relative;
+    top: -198px;
+    left: 236px;
+    -webkit-text-stroke: 0.5px black;
+}
+
+.checkout_ .fa-circle-plus {
+    position: relative;
+    top: -284px;
+    left: 461px;
+}
+
+.checkout_ p {
+    position: relative;
+    top: -321px;
+    left: 491px;
+}
+
+.checkout_ .fa-circle-minus {
+    position: relative;
+    top: -358px;
+    left: 515px;
+}
+
+.checkout_ h4 {
+    font-size: 30px;
+    -webkit-text-stroke: 1px black;
+    position: relative;
+    top: -215px;
+    left: 20px;
+}
+
+.checkout_ h5 {
+    font-size: 30px;
+    -webkit-text-stroke: 1px black;
+    position: relative;
+    top: -302px;
+    left: 436px;
+} 
+
+.form-wrapper-checkout {
+    display: flex;
+    text-align: left;
+    position: relative;
+    left: -350px;
+    max-width: 600px;
+    background: #3F2252;
+    margin: 10px -223px 45px -7px;
+    padding: 31px 22px 207px 33px;
+
+  }
+  
+  .form-wrapper-checkout > * {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .checkout-cta {
+      position: relative;
+      left: -243px;
+      top: -173px;
+  }
+
+.checkout-success {
+    background-color: #3F2252;
+    max-width: 600px;
+    position: relative;
+    margin: 20px auto;
+    padding: 5px 120px;
+    text-align: center;
+    bottom: 40px;
+}
+
+.checkout-success h2 {
+    font-size: 30px;
+}
+
 
 /* Footer */
 
 footer {
-    position: relative;
-    top: 190px;
-    padding: 2px;
     background-color: #000;
     text-align: center;
 }
@@ -390,33 +537,58 @@ footer {
 /* Mobile */
 
 @media (max-width: 599px) {
+
+
+    header {
+        position: relative;
+    }
+    
     .logo img {
-        display: none;
+        max-width: 100px;
+        max-height: 100px;
+        position: relative;
+        top: 10px;
     }
 
     nav {
-        top: 33px;
-        left: 0px;
+        display: block;
+        position: relative;
+        top: 49px;
+        left: -47px;
+        margin-bottom: 35px;
     }
 
     nav,
-    .navbar,
     #menu-checkbox {
-        background-color: #352253;
+        background-color: ##352253;
         display: none;
         color: #FFF;
     } 
 
     #menu-checkbox:checked ~ nav {
-    display: block;
+        display: block;
     }
 
     .hamburger_icon {
-        font-size: 1.5rem;
+        font-size: 2rem;
+        padding: 5px 10px;
     } 
 
     nav a {
         font-size: 1rem;
+    }
+
+    nav ul {
+        padding: 11px;
+        margin: 8px;
+    }
+
+    nav li {
+        position: relative;
+        top: -17px;
+        display: block;
+        padding: 0px;
+        margin: 5px 0px;
     }
 
     h1 {
@@ -425,6 +597,180 @@ footer {
 
     h2 {
         font-size: 30px;
+    }
+
+    .product_info {
+        flex-direction: column;
+    }
+
+    .info img,
+    .info h1,
+    .info h2 {
+        position: relative;
+        margin: 0;
+        padding: 5px;
+        top: 0px;
+    }
+
+    .info .cta {
+        position: relative;
+        margin: 0 0 10px 110px;
+    }
+
+    .about-info,
+    .about-info h1,
+    .about-info h2,
+    .about-info h3,
+    .about-info p,
+    .about-info .second,
+    .about-info .contact,
+    .about-info a,
+    .about-info .contact p {
+        position: relative;
+        top: 5px;
+        left: 5px;
+    }
+
+    .about-info h2 {
+        max-width: 250px;
+        font-size: 20px;
+        left: 10px;
+        top: -19px;
+    }
+
+    .about-info .second {
+        margin: 4px 0 0 -4px;
+    }
+
+    .about-info h3 {
+        font-size: 35px;
+        margin: -5px 0 0 -50px;
+    }
+
+    .about-info .contact p {
+        font-size: 20px;
+        margin: -9px 0 50px -69px;
+    }
+
+    .about-info .cta {
+        margin: 0 0 0 -45px;
+        font-size: 20px;
+        padding: 10px 15px;
+    }
+
+    .contactpage {
+        width: 100%;
+    }
+
+    .contactpage h1 {
+        max-width: 375px;
+        font-size: 35px;
+        position: relative;
+        margin: 0 auto;
+        top: 79px;
+        left: 83px;
+    }
+
+    .contactpage h2 {
+        max-width: 375px;
+        font-size: 45px;
+        position: relative;
+        margin: 0 auto;
+        left: 58px;
+        top: 71px;
+    }
+
+    form {
+        position: relative;
+        left: 0;
+        top: 90px;
+    }
+
+    .form-wrapper {
+        max-width: 300px;
+        position: relative;
+        margin: 0 auto;
+        padding: 10px;
+        top: 15px;
+    }
+
+    .contactpage .cta {
+        font-size: 20px;
+        padding: 10px 15px;
+        position: relative;
+        margin: 0 auto;
+        top: 57px;
+        left: 143px;
+    }
+
+    .games {
+        max-width: 300px;
+    }
+
+    .products {
+        padding: 22px 30px 70px 30px;
+        margin: 0 0 28px 0;
+    }
+
+    .featured_products {
+        width: 100%;
+        display: block;
+        margin: 0px;
+        padding: 0px;
+    }
+
+    .featured_products ul {
+        display: none;
+    }
+
+    .games .cta {
+        font-size: 15px;
+        padding: 10px;
+        margin: 2px;
+        top: 30px;
+    }
+
+    .products p {
+        margin: -30px 0 0 175px;
+    }
+
+    .products h1 {
+        font-size: 1.8rem;
+    }
+
+    .product_info {
+        display: block;
+        max-width: 350px;
+        margin: 0 auto;
+        padding: 20px 10px 65px 10px;
+        position: relative;
+        top: 20px;
+        margin-bottom: 55px;
+    }
+
+    .product_info .info {
+        max-width: 300px;
+        margin: 0 auto;
+        position: relative;
+        top: 10px;
+    }
+
+    .product_info .info h1 {
+        font-size: 50px;
+    }
+
+    .product_info .cta {
+        margin: 10px 20px 10px 65px;
+        font-size: 20px;
+        top: 10px;
+    }
+
+    .product_info p {
+        margin: 10px 0 20px 0;
+    }
+
+    .checkout_ {
+        display: flex;
     }
 }
 
