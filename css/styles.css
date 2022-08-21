@@ -1,0 +1,776 @@
+@font-face {
+    font-family: "Krungthep";
+    src: url("../fonts/Krungthep.ttf") fromat("truetype"); 
+}
+
+@font-face {
+    font-family: "Monsterrat";
+    src: url("../fonts/Montserrat-Light.ttf") format("truetype");
+}
+
+/* General */
+
+body {
+    min-height: 100vh;
+    margin: 0px;
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+}
+
+body,
+header,
+footer {
+    font-family: "Eurostile", sans-serif;
+    color: #FFF;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+    font-family: "Krungthep";
+    color: #FFF;
+}
+
+h1 {
+    font-size: 70px;
+    -webkit-text-stroke: 2px black;
+}
+
+h2 {
+    font-size: 45px;
+    -webkit-text-stroke: 1px black;
+}
+
+html {
+    background: url(../images/img_laser_light_background.jpg) no-repeat center center fixed;    
+    -webkit-background-size: cover; 
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+.galaxy {
+    background: url(../images/img_galaxy_background.jpg) no-repeat center center fixed;    
+    -webkit-background-size: cover; 
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+.cta,
+.cta2,
+.checkout-cta {
+    background-image: linear-gradient(#231E47, #3F2252, #812046);
+    color: #FFF;
+    font-family: "Krungthep";
+    font-size: 25px;
+    text-decoration: none;
+    padding: 10px 20px;
+    border: 2px solid #F469F4;
+    border-radius: 46px;
+    -webkit-text-stroke: 0.5px black;
+}
+
+/* Navigation */
+
+header {
+    display: flex;
+    flex-direction: row;
+}
+
+nav {
+    position: relative;
+    background: #352253DB;
+    color: #FFF;
+    font-size: 1.3rem;
+}
+
+nav li {
+    position: relative;
+    top: 15px;
+    display: block;
+    padding: 10px;
+}
+
+nav ul {
+    padding: 0px;
+}
+
+nav a {
+    color: #FFF;
+    text-decoration: none;
+    align-items: stretch;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+.active {
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+
+/* Home Page */
+
+.first {
+    text-align: center;
+    position: relative;
+    margin: 0px;
+}
+
+img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+}
+
+.first_content {
+    margin-top: 0%;
+    height: 300px;
+    width: 300x;
+}
+
+.welcome {
+    background-image: url("../images/img_galaxy_background.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position-x: right;
+    background-position-y: bottom;
+    min-height: 100vh;
+    position: relative;
+    top: 100px;
+}
+
+.welcome_content {
+    position: relative;
+    top: 200px;
+    text-align: center;
+    margin: 50px;
+}
+
+.welcome_content .cta {
+    position: relative;
+    top: 50px;
+    -webkit-text-stroke: 1px black;
+}
+
+/* Games */
+
+
+.games {
+    max-width: 1000px;
+    margin: 50px auto;
+}
+
+.featured_products {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    grid-gap: 40px;
+    padding: 17px;
+    margin: -55px;
+}
+
+.products {
+    background-color: #352253;
+    padding: 32px;
+    border: 20px;
+}
+
+.products img {
+    width: 100%;
+    position: relative;
+    padding-top: 10px;
+}
+
+.products h1 {
+    font-size: 2rem;
+    position: relative;
+    margin: 0;
+    -webkit-text-stroke: 1px black;
+}
+
+.products h2 {
+    font-size: 1.5rem;
+    position: relative;
+    margin: 0;
+    color: #F469F4;
+}
+
+.products p {
+    font-size: 1.2rem;
+    position: relative;
+    margin: 0 0 0 190px;
+}
+
+.products ul {
+    font-size: 1.2rem;
+    position: relative;
+    margin: 0 30px 20px 5px;
+}
+
+.games .cta {
+    font-size: 15px;
+    position: relative;
+    align-items: center;
+    padding-bottom: 10px;
+    padding-top: 10px;
+}
+
+.product_info {
+    background-color: #352253;
+    max-width: 600px;
+    margin: 50px auto;
+    padding: 50px;
+    display: flex;
+    gap: 50px;
+}
+
+.info {
+    flex: 50%;
+}
+
+.info img {
+    width: 100%;
+    position: relative;
+    top: 55px;
+}
+
+.info h1 {
+    font-size: 65px;
+    position: relative;
+    margin: 0;
+    padding: 0;
+}
+
+.info h2 {
+    font-size: 40px;
+    margin: 0 0 0 240px;
+}
+
+.info p {
+    margin: 5px 0 10px 0;
+}
+
+.info .cta {
+    position: relative;
+    margin: 0 0 20px 80px;
+    top: 20px;
+}
+
+
+/* About */
+
+.about-info h1 {
+    margin: 5px 0 0 0;
+}
+
+.about-info h2 {
+    font-family: "Eurostile";
+    font-size: 30px;
+    margin: 10px 0 0 0;
+}
+
+.about-info .second {
+    position: relative;
+    margin: 20px 0 0 0;
+}
+
+.about-info h3 {
+    font-family: "Krungthep";
+    font-size: 45px;
+    -webkit-text-stroke: 1.5px black;
+    margin: 10px 0 0 0;
+}
+
+.about-info p {
+    font-family: "Eurostile";
+    font-size: 30px;
+    -webkit-text-stroke: 1.5px black;
+}
+
+.about-info {
+    display: grid;
+    grid-template-columns: 1;
+    max-width: 600px;
+    position: relative;
+    left: 200px;
+}
+
+.about-info .contact {
+    position: relative;
+    top: -11px;
+    left: 420px;
+}
+
+.about-info .contact p {
+    position: relative;
+    margin: 0 0 30px 0;
+    -webkit-text-stroke: 0.5px black;
+}
+
+.about-info .cta {
+    position: relative;
+    bottom: -2px;
+}
+
+
+/* Contact */
+
+.contactpage {
+    max-width: 600px;
+}
+
+.contactpage h1 {
+    font-size: 50px;
+    -webkit-text-stroke: 1.5px black;
+    position: relative;
+    top: 85px;
+    left: 150px;
+}
+
+.contactpage h2 {
+    font-size: 70px;
+    -webkit-text-stroke: 2px black;
+    position: relative;
+    left: 200px;
+}
+
+form {
+    position: relative;
+    left: 400px;
+}
+
+input,
+select,
+textarea {
+  border: 1px solid #F469F4;
+  border-radius: 5px;
+  margin: 10px 10px 10px 0px;
+  padding: 10px;
+}
+
+textarea {
+  height: 65%;
+}
+
+.contact {
+  max-width: 600px;
+  margin: 50px auto;
+  text-align: center;
+}
+
+.form-wrapper {
+  display: flex;
+  text-align: left;
+}
+
+.form-wrapper > * {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.contactpage .cta {
+    position: relative;
+    top: 10px;
+    left: 200px;
+}
+
+/* Checkout */
+
+.thecheckout {
+    display: flex;
+}
+
+.checkout_ {
+    max-width: 600px;
+    background: #3F2252;
+    margin: 10px 10px 58px 60px;
+    padding: 22px 5px 32px 18px;
+    position: relative;
+}
+
+.checkout_ {
+    flex: 1;
+}
+
+.checkout_ h1 {
+    position: relative;
+    margin: 5px;
+    top: -8px;
+    left: 97px;
+}
+
+.checkout_ img {
+    max-width: 200px;
+    margin: 10px;
+    padding: 10px;
+}
+
+.checkout_ h2 {
+    position: relative;
+    font-size: 30px;
+    top: -187px;
+    left: 235px;
+}
+
+.checkout_ h3 {
+    font-size: 20px;
+    position: relative;
+    top: -198px;
+    left: 236px;
+    -webkit-text-stroke: 0.5px black;
+}
+
+.checkout_ .fa-circle-plus {
+    position: relative;
+    top: -284px;
+    left: 461px;
+}
+
+.checkout_ p {
+    position: relative;
+    top: -321px;
+    left: 491px;
+}
+
+.checkout_ .fa-circle-minus {
+    position: relative;
+    top: -358px;
+    left: 515px;
+}
+
+.checkout_ h4 {
+    font-size: 30px;
+    -webkit-text-stroke: 1px black;
+    position: relative;
+    top: -215px;
+    left: 20px;
+}
+
+.checkout_ h5 {
+    font-size: 30px;
+    -webkit-text-stroke: 1px black;
+    position: relative;
+    top: -302px;
+    left: 436px;
+} 
+
+.form-wrapper-checkout {
+    display: flex;
+    text-align: left;
+    position: relative;
+    left: -350px;
+    max-width: 600px;
+    background: #3F2252;
+    margin: 10px -223px 45px -7px;
+    padding: 31px 22px 207px 33px;
+
+  }
+  
+  .form-wrapper-checkout > * {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .checkout-cta {
+      position: relative;
+      left: -243px;
+      top: -173px;
+  }
+
+.checkout-success {
+    background-color: #3F2252;
+    max-width: 600px;
+    position: relative;
+    margin: 20px auto;
+    padding: 5px 120px;
+    text-align: center;
+    bottom: 40px;
+}
+
+.checkout-success h2 {
+    font-size: 30px;
+}
+
+
+/* Footer */
+
+footer {
+    background-color: #000;
+    text-align: center;
+}
+
+
+/* Desktop */
+
+@media (min-width: 600px) {
+    nav {
+        display: flex;
+        position: static;
+        background: none;
+    }
+
+    .hamburger_icon {
+        display: none;
+    }
+
+    nav li {
+        display: inline-block;
+    }
+
+    .logo img {
+        max-width: 190px;
+    }
+
+    #menu-checkbox {
+    display: none;
+    color: #FFF;
+    }
+}
+
+/* Mobile */
+
+@media (max-width: 599px) {
+
+
+    header {
+        position: relative;
+    }
+    
+    .logo img {
+        max-width: 100px;
+        max-height: 100px;
+        position: relative;
+        top: 10px;
+    }
+
+    nav {
+        display: block;
+        position: relative;
+        top: 49px;
+        left: -47px;
+        margin-bottom: 35px;
+    }
+
+    nav,
+    #menu-checkbox {
+        background-color: ##352253;
+        display: none;
+        color: #FFF;
+    } 
+
+    #menu-checkbox:checked ~ nav {
+        display: block;
+    }
+
+    .hamburger_icon {
+        font-size: 2rem;
+        padding: 5px 10px;
+    } 
+
+    nav a {
+        font-size: 1rem;
+    }
+
+    nav ul {
+        padding: 11px;
+        margin: 8px;
+    }
+
+    nav li {
+        position: relative;
+        top: -17px;
+        display: block;
+        padding: 0px;
+        margin: 5px 0px;
+    }
+
+    h1 {
+        font-size: 45px;
+    }
+
+    h2 {
+        font-size: 30px;
+    }
+
+    .product_info {
+        flex-direction: column;
+    }
+
+    .info img,
+    .info h1,
+    .info h2 {
+        position: relative;
+        margin: 0;
+        padding: 5px;
+        top: 0px;
+    }
+
+    .info .cta {
+        position: relative;
+        margin: 0 0 10px 110px;
+    }
+
+    .about-info,
+    .about-info h1,
+    .about-info h2,
+    .about-info h3,
+    .about-info p,
+    .about-info .second,
+    .about-info .contact,
+    .about-info a,
+    .about-info .contact p {
+        position: relative;
+        top: 5px;
+        left: 5px;
+    }
+
+    .about-info h2 {
+        max-width: 250px;
+        font-size: 20px;
+        left: 10px;
+        top: -19px;
+    }
+
+    .about-info .second {
+        margin: 4px 0 0 -4px;
+    }
+
+    .about-info h3 {
+        font-size: 35px;
+        margin: -5px 0 0 -50px;
+    }
+
+    .about-info .contact p {
+        font-size: 20px;
+        margin: -9px 0 50px -69px;
+    }
+
+    .about-info .cta {
+        margin: 0 0 0 -45px;
+        font-size: 20px;
+        padding: 10px 15px;
+    }
+
+    .contactpage {
+        width: 100%;
+    }
+
+    .contactpage h1 {
+        max-width: 375px;
+        font-size: 35px;
+        position: relative;
+        margin: 0 auto;
+        top: 79px;
+        left: 83px;
+    }
+
+    .contactpage h2 {
+        max-width: 375px;
+        font-size: 45px;
+        position: relative;
+        margin: 0 auto;
+        left: 58px;
+        top: 71px;
+    }
+
+    form {
+        position: relative;
+        left: 0;
+        top: 90px;
+    }
+
+    .form-wrapper {
+        max-width: 300px;
+        position: relative;
+        margin: 0 auto;
+        padding: 10px;
+        top: 15px;
+    }
+
+    .contactpage .cta {
+        font-size: 20px;
+        padding: 10px 15px;
+        position: relative;
+        margin: 0 auto;
+        top: 57px;
+        left: 143px;
+    }
+
+    .games {
+        max-width: 300px;
+    }
+
+    .products {
+        padding: 22px 30px 70px 30px;
+        margin: 0 0 28px 0;
+    }
+
+    .featured_products {
+        width: 100%;
+        display: block;
+        margin: 0px;
+        padding: 0px;
+    }
+
+    .featured_products ul {
+        display: none;
+    }
+
+    .games .cta {
+        font-size: 15px;
+        padding: 10px;
+        margin: 2px;
+        top: 30px;
+    }
+
+    .products p {
+        margin: -30px 0 0 175px;
+    }
+
+    .products h1 {
+        font-size: 1.8rem;
+    }
+
+    .product_info {
+        display: block;
+        max-width: 350px;
+        margin: 0 auto;
+        padding: 20px 10px 65px 10px;
+        position: relative;
+        top: 20px;
+        margin-bottom: 55px;
+    }
+
+    .product_info .info {
+        max-width: 300px;
+        margin: 0 auto;
+        position: relative;
+        top: 10px;
+    }
+
+    .product_info .info h1 {
+        font-size: 50px;
+    }
+
+    .product_info .cta {
+        margin: 10px 20px 10px 65px;
+        font-size: 20px;
+        top: 10px;
+    }
+
+    .product_info p {
+        margin: 10px 0 20px 0;
+    }
+
+    .checkout_ {
+        display: flex;
+    }
+}
+
