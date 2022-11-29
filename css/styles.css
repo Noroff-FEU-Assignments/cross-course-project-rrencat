@@ -44,7 +44,7 @@ h2 {
 }
 
 html {
-    background: url(../images/img_laser_light_background.jpg) no-repeat center center fixed;    
+    background: url(../images/cool-geometric-triangular-figure-neon-laser-light-great-backgrounds.jpg) no-repeat center center fixed;    
     -webkit-background-size: cover; 
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -52,7 +52,7 @@ html {
 }
 
 .galaxy {
-    background: url(../images/img_galaxy_background.jpg) no-repeat center center fixed;    
+    background: url(../images/galaxy.jpg) no-repeat center center fixed;    
     -webkit-background-size: cover; 
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -142,7 +142,7 @@ img {
     background-position-y: bottom;
     min-height: 100vh;
     position: relative;
-    top: 100px;
+    top: 150px;
 }
 
 .welcome_content {
