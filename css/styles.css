@@ -52,7 +52,7 @@ html {
 }
 
 .galaxy {
-    background: url(../images/galaxy.jpg) no-repeat center center fixed;    
+    background: url(../images/galaxy_background_image.jpg) no-repeat center center fixed;    
     -webkit-background-size: cover; 
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -342,6 +342,7 @@ img {
 form {
     position: relative;
     left: 400px;
+    padding-bottom: 200px;
 }
 
 input,
@@ -378,6 +379,13 @@ textarea {
     position: relative;
     top: 10px;
     left: 200px;
+}
+
+.form-error {
+    display: none;
+    color: red;
+    font-size: 0.9rem;
+    margin-top: 2px;
 }
 
 /* Checkout */
