@@ -22,9 +22,9 @@ function validateForm(event) {
     }
 
     if (checkLength(yourMessage.value, 5) === true) {
-        nameError.style.display = "none";
+        messageError.style.display = "none";
     } else {
-        nameError.style.display = "block";
+        messageError.style.display = "block";
     }
 
     console.log("It worked!");

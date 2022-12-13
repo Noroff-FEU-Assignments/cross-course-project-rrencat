@@ -339,46 +339,39 @@ img {
     left: 200px;
 }
 
-form {
+#contactForm {
+    display: flex;
+    flex-direction: column;
+    background-color: #352253;
+    border: 1px solid #F469F4;
+    padding: 2em;
+    margin-bottom: 100px;
     position: relative;
-    left: 400px;
-    padding-bottom: 200px;
+    left: 350px;
 }
 
-input,
-select,
-textarea {
-  border: 1px solid #F469F4;
-  border-radius: 5px;
-  margin: 10px 10px 10px 0px;
-  padding: 10px;
+input {
+    border: 1px solid #F469F4;
+    border-radius: 5px;
+    width: 90%;
+    margin-top: 2px;
+    padding: 10px;
+    font-size: 16px;
 }
 
-textarea {
-  height: 65%;
+button {
+    margin: 50px 155px;
+}
+
+label {
+    display: block;
+    margin-top: 1rem;
 }
 
 .contact {
   max-width: 600px;
   margin: 50px auto;
   text-align: center;
-}
-
-.form-wrapper {
-  display: flex;
-  text-align: left;
-}
-
-.form-wrapper > * {
-  flex: 1;
-  display: flex;
-  flex-direction: column;
-}
-
-.contactpage .cta {
-    position: relative;
-    top: 10px;
-    left: 200px;
 }
 
 .form-error {
@@ -510,6 +503,7 @@ textarea {
 /* Footer */
 
 footer {
+    position: relative;
     background-color: #000;
     text-align: center;
 }
@@ -667,6 +661,7 @@ footer {
     }
 
     .contactpage {
+        max-width: 300px;
         width: 100%;
     }
 
@@ -688,18 +683,10 @@ footer {
         top: 71px;
     }
 
-    form {
+    #contactForm {
         position: relative;
-        left: 0;
+        left: 40px;
         top: 90px;
-    }
-
-    .form-wrapper {
-        max-width: 300px;
-        position: relative;
-        margin: 0 auto;
-        padding: 10px;
-        top: 15px;
     }
 
     .contactpage .cta {
@@ -707,8 +694,8 @@ footer {
         padding: 10px 15px;
         position: relative;
         margin: 0 auto;
-        top: 57px;
-        left: 143px;
+        top: 20px;
+        left: 50px;
     }
 
     .games {
@@ -778,7 +765,8 @@ footer {
     }
 
     .checkout_ {
-        display: flex;
+        width: 100%;
+        display: block;
     }
 }
 
