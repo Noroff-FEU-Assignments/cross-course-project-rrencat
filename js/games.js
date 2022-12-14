@@ -1,8 +1,8 @@
-var listOfGames = [
+export var listOfGames = [
     {
         id: 200,
         name: "Cyberpunk",
-        img: <img src="../images/games/img_game_cyberpunk.jpg"></img>,
+        img: <img src="../images/games/img_game_cyberpunk.jpg" alt={listOfGames.name}></img>,
         description: "Cyberpunk is an open-world, action-adventure story set in Night City, a megalopolis obsessed with power, glamour and body modification. You play as V, a mercenary outlaw going after a one-of-a-kind implant that is the key to immortality. You can customize your character’s cyberware, skillset and play style, and explore a vast city where the choices you make shape the story and the world around you.",
         age: "16",
         type: "Playbox One X",

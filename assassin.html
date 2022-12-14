@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html class="galaxy"> 
+<html> 
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -18,21 +18,26 @@
           <a href="index.html" class="logo"> <img src="images/img_logo.png" alt="GameHub logo"> </a>
         </div>
         <ul>
-          <li> <a href="games.html">Games</a></li>
+          <li> <a href="games.html" class="active">Games</a></li>
           <li> <a href="about.html">About Us</a></li>
           <li> <a href="contact.html">Contact</a></li>
-          <li> <a href="checkout.html" class="active">Checkout</a></li>
+          <li> <a href="checkout.html">Checkout</a></li>
         </ul>
       </nav>
     </header>
     <main>
-      <section class="checkout-success">
-        <h1>Success!</h1>
-        <h2>Congratulations, your payment went through without a hitch!</h2> 
-        <h2>We hope you enjoy your new game.</h2>
-        <h2>Thank you for your purchase from all of us at</h2>
-        <img src="images/img_gamehublogo copy.png" alt="GameHub logo">
-      </section>  
+      <div class="breadcrumb-nav"><a href="games.html">< Back to games</a></div>
+      <section class="product_info">
+        <div class="info">
+          <img src="images/games/img_game_assassin.jpg" alt="Assassin">
+        </div>
+        <div class="info">
+          <h1>Assassin</h1>
+          <h2>$19,99</h2>
+          <p>Assassin is a live-action game in which players try to eliminate one another using mock weapons, in an effort to become the last surviving player.</p>
+          <a href="#" class="cta">Add to Cart</a>
+        </div>
+      </section>
     </main>
     <footer>
       <p>Cross course project FEU1 by Renate Rasmussen</p>

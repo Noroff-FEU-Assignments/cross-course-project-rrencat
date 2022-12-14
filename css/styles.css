@@ -141,7 +141,6 @@ img {
     background-position-x: right;
     background-position-y: bottom;
     min-height: 100vh;
-    position: relative;
     top: 150px;
 }
 
@@ -172,6 +171,7 @@ img {
     grid-gap: 40px;
     padding: 17px;
     margin: -55px;
+    padding-bottom: 100px;
 }
 
 .products {
@@ -224,7 +224,7 @@ img {
     background-color: #352253;
     max-width: 600px;
     margin: 50px auto;
-    padding: 50px;
+    padding: 50px 50px 100px 50px;
     display: flex;
     gap: 50px;
 }
@@ -261,6 +261,11 @@ img {
     top: 20px;
 }
 
+.breadcrumb-nav a {
+    text-decoration: none;
+    color: white;
+    margin-left: 30px;
+}
 
 /* About */
 
@@ -383,16 +388,13 @@ label {
 
 /* Checkout */
 
-.thecheckout {
-    display: flex;
-}
+
 
 .checkout_ {
     max-width: 600px;
     background: #3F2252;
     margin: 10px 10px 58px 60px;
     padding: 22px 5px 32px 18px;
-    position: relative;
 }
 
 .checkout_ {
@@ -400,7 +402,7 @@ label {
 }
 
 .checkout_ h1 {
-    position: relative;
+    
     margin: 5px;
     top: -8px;
     left: 97px;
@@ -462,10 +464,7 @@ label {
 } 
 
 .form-wrapper-checkout {
-    display: flex;
-    text-align: left;
-    position: relative;
-    left: -350px;
+    
     max-width: 600px;
     background: #3F2252;
     margin: 10px -223px 45px -7px;
@@ -473,17 +472,8 @@ label {
 
   }
   
-  .form-wrapper-checkout > * {
-    flex: 1;
-    display: flex;
-    flex-direction: column;
-  }
+  
 
-  .checkout-cta {
-      position: relative;
-      left: -243px;
-      top: -173px;
-  }
 
 .checkout-success {
     background-color: #3F2252;
@@ -506,6 +496,8 @@ footer {
     position: relative;
     background-color: #000;
     text-align: center;
+    font-size: small;
+    padding: 10px;
 }
 
 
