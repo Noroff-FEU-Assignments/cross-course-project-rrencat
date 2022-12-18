@@ -39,29 +39,54 @@
     <main class="thecheckout">
       <section class="checkout_">
         <h1>Your order</h1>
-        <img src="images/games/img_game_cyberpunk.jpg" alt="Cyberpunk">
-        <h2>Cyberpunk</h2>
-        <h3>$14,99</h3>
-        <i class="fa-solid fa-circle-plus"></i>
-        <p>1</p>
-        <i class="fa-solid fa-circle-minus"></i>
-        <h4>Total</h4>
-        <h5>$14,99</h5>
-        <h6>Payment</h6>
-        <form>
-          <label for="name">Name</label>
-          <input type="text" id="name" name="Name">
-          <label for="cardnumber">Card number</label>
-          <input type="text" id="cardnumber" name="Card Number">
-          <label for="date">Expiration date</label>
-          <input type="text" id="date" name="Expiration date">
-          <label for="code">Security code</label>
-          <input type="text" id="code" name="Security code">
-          <a href="checkout_success.html" class="checkout-cta">Place Payment</a>
+        <div class="checkout-info">
+          <div> </div>
+        </div>
+        
+        
+      
+        
+      
+        <form class="payment-form">
+          <h6>Payment</h6>
+          <div>
+            <label for="name">Name *</label>
+            <input id="name" name="Name" placeholder="Please enter your name">
+            <div class="form-error" id="name-error">Your name must have a value of minimum 2 characters</div>
+          </div>
+          <div>
+            <label for="cardnumber">Card number *</label>
+            <input id="cardnumber" name="Card Number" placeholder="1234 5678 9012 3456">
+            <div class="form-error" id="cardnumber-error">Your cardnumber must have a value of 16 numbers</div>
+          </div>
+          <div>
+            <label for="date">Expiration date *</label>
+            <input id="date" name="Expiration date" placeholder="MM/YY">
+            <div class="form-error" id="date-error">Please enter the month and year your card expires</div>
+
+            <label for="code">CVV/CVC *</label>
+            <input id="code" name="Security code" placeholder="***">
+            <div class="form-error" id="code-error">Your security code must have a value of 3 numbers</div>
+          </div>
+          <div>
+            <button class="checkout-cta">Place Payment</button>
+          </div>
         </form>
+        
+      </section>
     </main>
     <footer>
+      <ul>
+        <li> <a href="index.html">Home | </a></li>
+        <li> <a href="games.html">Games | </a></li>
+        <li> <a href="about.html">About Us | </a></li>
+        <li> <a href="contact.html">Contact | </a></li>
+        <li> <a href="checkout.html">Checkout | </a></li>
+      </ul>
       <p>Cross course project FEU1 by Renate Rasmussen</p>
+      <p>API powered by <a href="https://rawg.io/" target="_blank">RAWG</a></p>
     </footer>
+    <script src="js/components/message.js"></script>
+    <script src="js/checkout.js"></script>
   </body>
 </html>
