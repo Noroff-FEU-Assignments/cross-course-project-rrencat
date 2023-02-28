@@ -2,11 +2,13 @@
 
 ![image](/images/background_img.jpg)
 
-A simple overview of the use/purpose of the project.
+Online game store that provides digital games to gamers at a competitive price.
 
 ## Description
 
 Add a more detailed description of what your project entails and set out to do.
+
+This project
 
 You can add some bullet points if you'd like to:
 
@@ -24,8 +26,6 @@ You can add some bullet points if you'd like to:
 
 ### Installing
 
-This is where you list how to get the project started. It typically just includes telling a person to clone the repo and then to install the dependencies e.g.
-
 1. Clone the repo:
 
 ```bash
@@ -39,8 +39,6 @@ npm install
 ```
 
 ### Running
-
-Here is where you detail how to run the app. It typically involves the commands you'd need to run to start the project e.g.
 
 To run the app, run the following commands:
 
