@@ -29,7 +29,7 @@ This is where you list how to get the project started. It typically just include
 1. Clone the repo:
 
 ```bash
-git clone git@github.com:NoroffFEU/portfolio-1-example.git https://github.com/Noroff-FEU-Assignments/cross-course-project-rrencat.git gh repo clone Noroff-FEU-Assignments/cross-course-project-rrencat
+git@github.com:Noroff-FEU-Assignments/cross-course-project-rrencat.git
 ```
 
 2. Install the dependencies:
