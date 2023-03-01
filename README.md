@@ -6,15 +6,19 @@ Online game store that provides digital games to gamers at a competitive price.
 
 ## Description
 
-Add a more detailed description of what your project entails and set out to do.
+This project entails to showcase and combine the different code languages we have learned throughout the first year of our front-end development studies at Noroff.
 
-This project
+As per the assignment brief the project sets out to create an online gamestore for a company named: GameHub - The universe of games. The website should be a place where users can purchase computer games. The gaming marketplace lets you buy tons of video games online for any device at a competitive price.
 
-You can add some bullet points if you'd like to:
+The project required the following site architecture:
 
-- List item 1
-- List item 2
-- List item 3
+- Home
+- List of games
+- A games page showing the product details (description of the product, price and add to cart button etc.)
+- Checkout page
+- Checkout success
+- About
+- Contact
 
 ## Built With
 
