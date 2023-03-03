@@ -64,4 +64,4 @@ This is where you can leave your social links for people to contact you, such as
 
 ## Acknowledgments
 
-API powered by [RAWG] (https://rawg.io/)
+API powered by [RAWG](https://rawg.io/)
