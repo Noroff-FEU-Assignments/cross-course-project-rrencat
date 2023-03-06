@@ -27,30 +27,6 @@ The project required the following site architecture:
 - JavaScript
 - [RAWG](https://rawg.io/) API
 
-## Getting Started
-
-### Installing
-
-1. Clone the repo:
-
-```bash
-git@github.com:Noroff-FEU-Assignments/cross-course-project-rrencat.git
-```
-
-2. Install the dependencies:
-
-```
-npm install
-```
-
-### Running
-
-To run the app, run the following commands:
-
-```bash
-npm run start
-```
-
 ## Contact
 
 [Email](rasmussen.renate.rr@gmail.com)
