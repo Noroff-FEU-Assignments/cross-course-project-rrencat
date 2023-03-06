@@ -25,6 +25,7 @@ The project required the following site architecture:
 - HTML
 - CSS
 - JavaScript
+- [RAWG](https://rawg.io/) API
 
 ## Getting Started
 
